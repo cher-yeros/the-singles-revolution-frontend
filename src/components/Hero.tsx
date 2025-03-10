@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 export default function Hero() {
@@ -8,13 +10,19 @@ export default function Hero() {
           {/* <!-- START THE CONTENT FOR THE INTRO  --> */}
           <div className="col-md-6 intros text-start">
             <h1 className="display-2">
-              <span className="display-2--intro">Hey!, I'm Patrick</span>
+              <span className="display-2--intro">ሰላም ? If-Net</span>
               <span className="display-2--description lh-base">
-                this is a multi-purpose responsive layout created with bootstrap
-                v5. (here your can place your description text)
+                We provide the new & better way to grow your business and
+                maximize your profit !
               </span>
             </h1>
-            <button type="button" className="rounded-pill btn-rounded">
+            <button
+              type="button"
+              className="rounded-pill btn-rounded"
+              onClick={() => {
+                window.location.href = "#contact";
+              }}
+            >
               Get in Touch
               <span>
                 <i className="fas fa-arrow-right"></i>

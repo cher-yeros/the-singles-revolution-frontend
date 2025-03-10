@@ -1,8 +1,10 @@
+"use client";
+
 import React from "react";
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark menu fixed-top">
       <div className="container">
         <a className="navbar-brand" href="">
           <img src="/assets/images/logo.png" alt="logo image" />
@@ -44,7 +46,7 @@ export default function Header() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#faq">
-                faq
+                FAQ
               </a>
             </li>
             <li className="nav-item">
@@ -58,8 +60,14 @@ export default function Header() {
               </a>
             </li>
           </ul>
-          <button type="button" className="rounded-pill btn-rounded">
-            +1 728365413
+          <button
+            type="button"
+            className="rounded-pill btn-rounded"
+            onClick={() => {
+              window.location.href = "tel:+251945936607";
+            }}
+          >
+            +251 945 933 607
             <span>
               <i className="fas fa-phone-alt"></i>
             </span>

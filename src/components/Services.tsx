@@ -11,17 +11,22 @@ export default function Services() {
           <div className="col-md-6 border-right">
             <div className="bg-white p-3">
               <h2 className="fw-bold text-capitalize text-center">
-                Our Services Range From Initial Design To Deployment Anywhere
-                Anytime
+                The New & Better Way to Grow Your Business and Maximize Your
+                Profit!
               </h2>
             </div>
           </div>
           <div className="col-md-6">
             <div className="bg-white p-4 text-start">
-              <p className="fw-light">
-                Lorem ipsum dolor sit amet consectetur architecto magni, dicta
-                maxime laborum temporibus dolorem esse doloremque illo quas nisi
-                enim molestias. Tempore ducimus molestiae in dolore enim.
+              <p className="">
+                The world is changing, and so is the way businesses grow. IfNet
+                introduces <strong>"The New & Better Way"</strong> —a
+                digital-first approach that helps businesses thrive, compete,
+                and maximize their profits. <br /> Today, success belongs to
+                those who embrace digital transformation. From branding to
+                digital marketing, website development to social media
+                management and content creation, we empower businesses with the
+                tools they need to stay ahead.
               </p>
             </div>
           </div>
@@ -30,16 +35,19 @@ export default function Services() {
 
       {/* <!-- START THE CONTENT FOR THE SERVICES  --> */}
       <div className="container">
-        {/* <!-- START THE MARKETING CONTENT  --> */}
+        {/* <!-- Branding & Identity --> */}
+
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
             <div className="services__content">
-              <div className="icon d-block fas fa-paper-plane"></div>
-              <h3 className="display-3--title mt-1">Marketing</h3>
+              <div className="icon d-block fas fa-palette "></div>
+              <h3 className="display-3--title mt-1">Branding & Identity</h3>
               <p className="lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                impedit rem, doloremque autem quibusdam blanditiis harum alias
-                hic accusantium maxime atque ratione magni repellat?
+                Your brand is more than just a logo—it’s how the world perceives
+                your business. We create unique, impactful, and memorable brand
+                identities that help you stand out. From logo design to complete
+                brand guidelines, we ensure your brand is consistent,
+                professional, and compelling.
               </p>
               <button
                 type="button"
@@ -55,20 +63,21 @@ export default function Services() {
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
             <div className="services__pic">
               <img
-                src="/assets/images/services/service-1.png"
-                alt="marketing illustration"
+                src="/assets/images/services/brand_identity.jpg"
+                alt="Branding & Identity"
                 className="img-fluid"
               />
             </div>
           </div>
         </div>
-        {/* <!-- START THE WEB DEVELOPMENT CONTENT  --> */}
+
+        {/* <!-- Website & Mobile App Development  --> */}
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
             <div className="services__pic">
               <img
-                src="/assets/images/services/service-2.png"
-                alt="web development illustration"
+                src="/assets/images/services/development.jpg"
+                alt="Web & Mobile App Development"
                 className="img-fluid"
               />
             </div>
@@ -76,11 +85,17 @@ export default function Services() {
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
             <div className="services__content">
               <div className="icon d-block fas fa-code"></div>
-              <h3 className="display-3--title mt-1">web development</h3>
+              <h3 className="display-3--title mt-1">
+                Website & Mobile App Development
+              </h3>
               <p className="lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                impedit rem, doloremque autem quibusdam blanditiis harum alias
-                hic accusantium maxime atque ratione magni repellat?
+                A strong online presence starts with a high-performing website
+                and a user-friendly mobile app. We design and develop modern,
+                responsive, and conversion-driven platforms tailored to your
+                business needs. Whether it's an e-commerce store, a corporate
+                website, or a mobile app for services like booking, delivery, or
+                customer engagement, we bring your vision to life with seamless
+                functionality and intuitive design.
               </p>
               <button
                 type="button"
@@ -94,16 +109,21 @@ export default function Services() {
             </div>
           </div>
         </div>
-        {/* <!-- START THE CLOUD HOSTING CONTENT  --> */}
+
+        {/* <!--  Content Creation & Social Media Management  --> */}
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
             <div className="services__content">
-              <div className="icon d-block fas fa-cloud-upload-alt"></div>
-              <h3 className="display-3--title mt-1">cloud hosting</h3>
+              <div className="icon d-block fas fa-video"></div>
+              <h3 className="display-3--title mt-1">
+                Content Creation & Social Media Management
+              </h3>
               <p className="lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                impedit rem, doloremque autem quibusdam blanditiis harum alias
-                hic accusantium maxime atque ratione magni repellat?
+                Engaging content is key to digital success. We help businesses
+                create, manage, and optimize their social media presence with
+                high-quality visuals, videos, and written content. Our
+                strategies build trust, increase engagement, and drive sales by
+                keeping your audience connected to your brand.
               </p>
               <button
                 type="button"
@@ -119,10 +139,48 @@ export default function Services() {
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
             <div className="services__pic">
               <img
-                src="/assets/images/services/service-3.png"
-                alt="cloud hosting illustration"
+                src="/assets/images/services/content_creation.jpg"
+                alt="Contact Creation"
                 className="img-fluid"
               />
+            </div>
+          </div>
+        </div>
+
+        {/* <!--  Digital Marketing & Growth Strategies  --> */}
+        <div className="row">
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+            <div className="services__pic">
+              <img
+                src="/assets/images/services/digital_marketing.jpg"
+                alt="Digital Marketing"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div className="services__content">
+              <div className="icon d-block fas fa-bullhorn "></div>
+              <h3 className="display-3--title mt-1">
+                {" "}
+                Digital Marketing & Growth Strategies
+              </h3>
+              <p className="lh-lg">
+                Marketing isn’t just about being online—it’s about reaching the
+                right people at the right time. We provide SEO, paid advertising
+                (Google & social media ads), email marketing, and data-driven
+                strategies to grow your business. Our approach is designed to
+                maximize visibility, attract customers, and boost revenue.
+              </p>
+              <button
+                type="button"
+                className="rounded-pill btn-rounded border-primary"
+              >
+                Learn more
+                <span>
+                  <i className="fas fa-arrow-right"></i>
+                </span>
+              </button>
             </div>
           </div>
         </div>

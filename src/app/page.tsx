@@ -1,6 +1,7 @@
 import Companies from "@/components/Companies";
 import Contact from "@/components/Contact";
 import FAQs from "@/components/FAQs";
+import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Footer from "@/components/layout/Footer";
 import Portfolio from "@/components/Portfolio";
@@ -16,11 +17,13 @@ export default function Home() {
 
       <Services />
 
+      <Gallery />
+
+      <Portfolio />
+
       <Testimonials />
 
       <FAQs />
-
-      <Portfolio />
 
       <Contact />
 
