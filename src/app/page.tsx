@@ -17,7 +17,7 @@ export default function Home() {
 
       <Services />
 
-      <Gallery />
+      {/* <Gallery /> */}
 
       <Portfolio />
 

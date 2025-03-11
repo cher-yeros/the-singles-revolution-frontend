@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 // import "./gallery.css";
 
 export default function Gallery() {
-  const isotopeInstance = useRef(null);
+  const isotopeInstance = useRef<Isotope | null>(null);
   const gridElement = useRef(null);
 
   const [activeFilter, setActiveFilter] = useState(".branding-and-identity");
@@ -28,24 +28,29 @@ export default function Gallery() {
 
   useEffect(() => {
     // Initialize Isotope
-    isotopeInstance.current = new Isotope(gridElement.current, {
+    isotopeInstance.current = new Isotope(".portfolio-container", {
       itemSelector: ".portfolio-item",
       layoutMode: "fitRows",
     });
 
     // Cleanup on unmount
     return () => {
-      isotopeInstance.current.destroy();
+      isotopeInstance.current?.destroy();
     };
   }, []);
 
+  // useEffect(() => {
+  //   if (isotopeInstance.current) {
+  //     isotopeInstance.current.arrange({ filter: activeFilter });
+  //     isotopeInstance.current.on("arrangeComplete", function () {
+  //       window.AOS && window.AOS.refresh(); // Refresh AOS if it's available
+  //     });
+  //   }
+  // }, [activeFilter]);
+
   useEffect(() => {
-    if (isotopeInstance.current) {
-      isotopeInstance.current.arrange({ filter: activeFilter });
-      isotopeInstance.current.on("arrangeComplete", function () {
-        window.AOS && window.AOS.refresh(); // Refresh AOS if it's available
-      });
-    }
+    if (activeFilter === "*") isotopeInstance.current?.arrange({ filter: `*` });
+    else isotopeInstance.current?.arrange({ filter: `.${activeFilter}` });
   }, [activeFilter]);
 
   const filterItems = (filter: string) => {
@@ -181,16 +186,13 @@ export default function Gallery() {
             {dataFilters.map((filter) => (
               <button
                 className={`btn ${
-                  activeFilter === filter.dataFilter
+                  activeFilter === filter.category
                     ? "btn-primary"
                     : "btn-outline-primary"
                 }`}
                 type="button"
                 key={filter.label}
-                // className={
-                //   activeFilter === filter.dataFilter && "filter-active"
-                // }
-                onClick={() => filterItems(filter.dataFilter)}
+                onClick={() => filterItems(filter.category)}
               >
                 {filter.label}
               </button>
@@ -204,26 +206,24 @@ export default function Gallery() {
           // data-aos-delay="200"
           ref={gridElement}
         >
-          <div className="row">
-            {portfolios?.map((portfolio) => (
-              <div className={`col-lg-4 col-md-6  ${portfolio.category}`}>
-                <div className="portfolio-box shadow">
-                  <img
-                    src={portfolio.image}
-                    alt="portfolio 1 image"
-                    title="portfolio 1 picture"
-                    className="img-fluid"
-                  />
-                  <div className="portfolio-info">
-                    <div className="caption">
-                      <h4>{portfolio.title}</h4>
-                      <p>{portfolio.name}</p>
-                    </div>
+          {portfolios?.map((portfolio) => (
+            <div className={`col-lg-4 col-md-6  ${portfolio.category}`}>
+              <div className="portfolio-box shadow">
+                <img
+                  src={portfolio.image}
+                  alt="portfolio 1 image"
+                  title="portfolio 1 picture"
+                  className="img-fluid"
+                />
+                <div className="portfolio-info">
+                  <div className="caption">
+                    <h4>{portfolio.title}</h4>
+                    <p>{portfolio.name}</p>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
