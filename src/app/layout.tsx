@@ -20,8 +20,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "IfNet Agency - Portfolio",
-  description: "IfNet Agency - Portfolio",
+  title: "Ifnet Digital Hub",
+  description:
+    'At Ifnet, we provide digital-first solutions designed to help businesses grow, compete, and maximize profitability. We believe in "The New & Better Way", a smarter, more effective approach to branding, marketing, and digital presence.',
 };
 
 export default function RootLayout({

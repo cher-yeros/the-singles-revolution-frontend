@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Hero />
 
-      <Companies />
+      {/* <Companies /> */}
 
       <Services />
 
@@ -23,11 +23,15 @@ export default function Home() {
 
       <Testimonials />
 
-      <FAQs />
+      {/* <FAQs /> */}
 
       <Contact />
 
       <Footer />
+
+      <a href="#" className="shadow btn-primary rounded-circle back-to-top">
+        <i className="fas fa-chevron-up"></i>
+      </a>
     </>
   );
 }

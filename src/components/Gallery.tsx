@@ -62,7 +62,7 @@ export default function Gallery() {
     {
       className: "",
       dataFilter: ".branding-and-identity",
-      label: "branding-and-identity",
+      label: "Branding & Identity",
       category: "branding-and-identity",
     },
     {
@@ -158,18 +158,15 @@ export default function Gallery() {
       style={{ marginTop: "13rem", minHeight: "100vh" }}
     >
       <div className="container">
-        <h2
-          style={{
-            marginInline: "auto",
-            fontSize: "40px",
-            textAlign: "center",
-          }}
-          className="h2 section-subtitle"
-        >
-          Gallery
-        </h2>
+        <div className="row text-center mt-5" data-aos="fade-up">
+          <h1 className="display-3 fw-bold text-capitalize">Portfolio</h1>
+          <div className="heading-line"></div>
+          <p className="lead">
+            Explore our work and see how we illuminate digital innovation
+          </p>
+        </div>
 
-        <div className="row mt-5 mb-4 g-3 text-center">
+        <div className="row mt-5 mb-4 g-3 text-center" data-aos="fade-up">
           <div className="col-md-12 d-flex justify-content-center gap-1">
             {/* <button
               className={`btn ${

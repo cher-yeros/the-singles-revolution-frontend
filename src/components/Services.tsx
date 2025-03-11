@@ -2,12 +2,12 @@ export default function Services() {
   return (
     <section id="services" className="services">
       <div className="container">
-        <div className="row text-center">
+        <div className="row text-center" data-aos="fade-up">
           <h1 className="display-3 fw-bold">Our Services</h1>
           <div className="heading-line mb-1"></div>
         </div>
         {/* <!-- START THE DESCRIPTION CONTENT  --> */}
-        <div className="row pt-2 pb-2 mt-0 mb-3">
+        <div className="row pt-2 pb-2 mt-0 mb-3" data-aos="fade-up">
           <div className="col-md-6 border-right">
             <div className="bg-white p-3">
               <h2 className="fw-bold text-capitalize text-center">
@@ -19,7 +19,7 @@ export default function Services() {
           <div className="col-md-6">
             <div className="bg-white p-4 text-start">
               <p className="">
-                The world is changing, and so is the way businesses grow. IfNet
+                The world is changing, and so is the way businesses grow. Ifnet
                 introduces <strong>"The New & Better Way"</strong> —a
                 digital-first approach that helps businesses thrive, compete,
                 and maximize their profits. <br /> Today, success belongs to
@@ -37,7 +37,7 @@ export default function Services() {
       <div className="container">
         {/* <!-- Branding & Identity --> */}
 
-        <div className="row">
+        <div className="row" data-aos="fade-up">
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
             <div className="services__content">
               <div className="icon d-block fas fa-palette "></div>
@@ -60,7 +60,11 @@ export default function Services() {
               </button>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+          <div
+            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className="services__pic">
               <img
                 src="/assets/images/services/brand_identity.jpg"
@@ -72,8 +76,12 @@ export default function Services() {
         </div>
 
         {/* <!-- Website & Mobile App Development  --> */}
-        <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+        <div className="row" data-aos="fade-up">
+          <div
+            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className="services__pic">
               <img
                 src="/assets/images/services/development.jpg"
@@ -111,7 +119,7 @@ export default function Services() {
         </div>
 
         {/* <!--  Content Creation & Social Media Management  --> */}
-        <div className="row">
+        <div className="row" data-aos="fade-up">
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
             <div className="services__content">
               <div className="icon d-block fas fa-video"></div>
@@ -136,7 +144,11 @@ export default function Services() {
               </button>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+          <div
+            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className="services__pic">
               <img
                 src="/assets/images/services/content_creation.jpg"
@@ -148,8 +160,12 @@ export default function Services() {
         </div>
 
         {/* <!--  Digital Marketing & Growth Strategies  --> */}
-        <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+        <div className="row" data-aos="fade-up">
+          <div
+            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className="services__pic">
               <img
                 src="/assets/images/services/digital_marketing.jpg"

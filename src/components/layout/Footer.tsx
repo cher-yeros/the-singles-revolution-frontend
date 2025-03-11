@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           {/* <!-- CONTENT FOR THE MOBILE NUMBER  --> */}
-          <div className="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+          <div className="col-md-3 col-lg-3 contact-box pt-1 d-md-block d-lg-flex d-flex">
             <div className="contact-box__icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -22,40 +22,79 @@ export default function Footer() {
               </svg>
             </div>
             <div className="contact-box__info">
-              <a href="#" className="contact-box__info--title">
-                +1 728365413
+              <a
+                href="tel:+251 985 519 439"
+                className="contact-box__info--title"
+              >
+                +251 985 519 439
               </a>
-              <p className="contact-box__info--subtitle">Mon-Fri 9am-6pm</p>
+              <p className="contact-box__info--subtitle">Telephone</p>
             </div>
           </div>
-          {/* <!-- CONTENT FOR EMAIL  --> */}
-          <div className="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+
+          <div className="col-md-3 col-lg-3 contact-box pt-1 d-md-block d-lg-flex d-flex">
             <div className="contact-box__icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="icon icon-tabler icon-tabler-mail-opened"
+                // width="24"
+                // height="24"
                 viewBox="0 0 24 24"
-                stroke-width="1"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                // stroke="currentColor"
+                // stroke-width="2"
+                // stroke-linecap="round"
+                // stroke-linejoin="round"
+                className="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <polyline points="3 9 12 15 21 9 12 3 3 9" />
-                <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
-                <line x1="3" y1="19" x2="9" y2="13" />
-                <line x1="15" y1="13" x2="21" y2="19" />
+                <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
               </svg>
             </div>
             <div className="contact-box__info">
-              <a href="#" className="contact-box__info--title">
-                info@company.com
+              <a
+                href="https://t.me/ifnetDigitalHub"
+                className="contact-box__info--title"
+                target="_blank"
+              >
+                @ifnetDigitalHub
               </a>
-              <p className="contact-box__info--subtitle">Online support</p>
+              <p className="contact-box__info--subtitle">Telegram</p>
             </div>
           </div>
+
+          <div className="col-md-3 col-lg-3 contact-box pt-1 d-md-block d-lg-flex d-flex">
+            <div className="contact-box__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                // width="24"
+                // height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                // stroke="currentColor"
+                // stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                <path d="M3 7l9 6l9 -6" />
+              </svg>
+            </div>
+            <div className="contact-box__info">
+              <a
+                href="mailto:ifnetdigitalhub@gmail.com"
+                className="contact-box__info--title"
+                target="_blank"
+              >
+                ifnetdigitalhub@gmail.com
+              </a>
+              <p className="contact-box__info--subtitle">Email</p>
+            </div>
+          </div>
+
           {/* <!-- CONTENT FOR LOCATION  --> */}
-          <div className="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+          <div className="col-md-3 col-lg-3 contact-box pt-1 d-md-block d-lg-flex d-flex">
             <div className="contact-box__icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,16 +115,16 @@ export default function Footer() {
             </div>
             <div className="contact-box__info">
               <a href="#" className="contact-box__info--title">
-                New York, USA
+                Addis Ababa, Ethiopia
               </a>
-              <p className="contact-box__info--subtitle">NY 10012, US</p>
+              <p className="contact-box__info--subtitle">Address</p>
             </div>
           </div>
         </div>
       </div>
 
       {/* <!-- START THE SOCIAL MEDIA CONTENT  --> */}
-      <div className="footer-sm" style={{ backgroundColor: "#212121" }}>
+      {/* <div className="footer-sm" style={{ backgroundColor: "#212121" }}>
         <div className="container">
           <div className="row py-4 text-center text-white">
             <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
@@ -110,41 +149,43 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <!-- START THE CONTENT FOR THE CAMPANY INFO --> */}
       <div className="container mt-5">
         <div className="row text-white justify-content-center mt-3 pb-3">
           <div className="col-12 col-sm-6 col-lg-6 mx-auto">
-            <h5 className="text-capitalize fw-bold">Campany name</h5>
+            <h5 className="text-capitalize fw-bold">Ifnet Digital Hub</h5>
             <hr
               className="bg-white d-inline-block mb-4"
               style={{ width: "60px", height: "2px" }}
             />
             <p className="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              ex obcaecati blanditiis reprehenderit ab mollitia voluptatem
-              consectetur?
+              At Ifnet, we introduce "The New & Better Way", a smarter approach
+              to branding, marketing, and digital transformation. We help
+              businesses of all sizes establish a strong digital presence,
+              streamline operations, and reach the right audience with
+              cutting-edge technology and strategies.
             </p>
           </div>
           <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-            <h5 className="text-capitalize fw-bold">Products</h5>
+            <h5 className="text-capitalize fw-bold">Services</h5>
             <hr
               className="bg-white d-inline-block mb-4"
               style={{ width: "60px", height: "2px" }}
             />
             <ul className="list-inline campany-list">
               <li>
-                <a href="#">Lorem ipsum</a>
+                <a href="#">Branding & Identity</a>
               </li>
               <li>
-                <a href="#">Lorem ipsum</a>
+                <a href="#">Website & Mobile App Development</a>
               </li>
               <li>
-                <a href="#">Lorem ipsum</a>
+                <a href="#">Content Creation & Social Media Management</a>
               </li>
               <li>
-                <a href="#">Lorem ipsum</a>
+                <a href="#">Digital Marketing & Growth Strategies</a>
               </li>
             </ul>
           </div>
@@ -156,20 +197,20 @@ export default function Footer() {
             />
             <ul className="list-inline campany-list">
               <li>
-                <a href="#"> Your Account</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">Become an Affiliate</a>
+                <a href="#services">Services</a>
               </li>
               <li>
-                <a href="#">create an account</a>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="#">Help</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
-          <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+          {/* <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
             <h5 className="text-capitalize fw-bold">contact</h5>
             <hr
               className="bg-white d-inline-block mb-4"
@@ -189,7 +230,7 @@ export default function Footer() {
                 <a href="#">Lorem ipsum</a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -199,16 +240,10 @@ export default function Footer() {
           <div className="row text-center text-white">
             <div className="col-12">
               <div className="footer-bottom__copyright">
-                &COPY; Copyright 2021 <a href="#">Company</a> | Created by
-                <a href="http://codewithpatrick.com" target="_blank">
-                  Muriungi
-                </a>
+                © Copyright 2025 <br /> <a href="#">Ifnet Digital Hub</a> <br />{" "}
+                All Rights Reserved.
                 <br />
                 <br />
-                Distributed by
-                <a href="http://themewagon.com" target="_blank">
-                  ThemeWagon
-                </a>
               </div>
             </div>
           </div>

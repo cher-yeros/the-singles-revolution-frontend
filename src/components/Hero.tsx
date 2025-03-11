@@ -1,8 +1,18 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 export default function Hero() {
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false,
+    });
+  }, []);
+
   return (
     <section id="home" className="intro-section">
       <div className="container">
@@ -10,13 +20,20 @@ export default function Hero() {
           {/* <!-- START THE CONTENT FOR THE INTRO  --> */}
           <div className="col-md-6 intros text-start">
             <h1 className="display-2">
-              <span className="display-2--intro">ሰላም ? If-Net</span>
-              <span className="display-2--description lh-base">
+              <span className="display-2--intro" data-aos="fade-down">
+                ሰላም ? We are Ifnet
+              </span>
+              <span
+                className="display-2--description lh-base"
+                data-aos="fade-up"
+              >
                 We provide the new & better way to grow your business and
                 maximize your profit !
               </span>
             </h1>
             <button
+              data-aos="fade-up"
+              data-aos-delay="200"
               type="button"
               className="rounded-pill btn-rounded"
               onClick={() => {
