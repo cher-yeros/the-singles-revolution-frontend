@@ -39,15 +39,6 @@ export default function Gallery() {
     };
   }, []);
 
-  // useEffect(() => {
-  //   if (isotopeInstance.current) {
-  //     isotopeInstance.current.arrange({ filter: activeFilter });
-  //     isotopeInstance.current.on("arrangeComplete", function () {
-  //       window.AOS && window.AOS.refresh(); // Refresh AOS if it's available
-  //     });
-  //   }
-  // }, [activeFilter]);
-
   useEffect(() => {
     if (activeFilter === "*") isotopeInstance.current?.arrange({ filter: `*` });
     else isotopeInstance.current?.arrange({ filter: `.${activeFilter}` });

@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark menu fixed-top">
@@ -60,18 +58,16 @@ export default function Header() {
               </a>
             </li>
           </ul>
-          <button
+          <a
+            href="tel:+251985519439"
             type="button"
             className="rounded-pill btn-rounded"
-            onClick={() => {
-              window.location.href = "tel:+251945936607";
-            }}
           >
-            +251 945 933 607
+            +251 951 519 439
             <span>
               <i className="fas fa-phone-alt"></i>
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </nav>

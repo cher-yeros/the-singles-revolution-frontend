@@ -31,20 +31,18 @@ export default function Hero() {
                 maximize your profit !
               </span>
             </h1>
-            <button
+            <a
+              href="#contact"
               data-aos="fade-up"
               data-aos-delay="200"
               type="button"
               className="rounded-pill btn-rounded"
-              onClick={() => {
-                window.location.href = "#contact";
-              }}
             >
               Get in Touch
               <span>
                 <i className="fas fa-arrow-right"></i>
               </span>
-            </button>
+            </a>
           </div>
           {/* <!-- START THE CONTENT FOR THE VIDEO --> */}
           <div className="col-md-6 intros text-end">

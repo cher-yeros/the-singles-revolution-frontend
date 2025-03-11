@@ -7753,6 +7753,12 @@ fieldset:disabled .btn {
 .rounded-pill {
   border-radius: 50rem !important;
 }
+a.rounded-pill {
+  border-radius: 50rem !important;
+  text-decoration: none;
+    color: black;
+    display: inline-block;
+}
 
 .rounded-top {
   border-top-left-radius: 0.25rem !important;
@@ -11113,6 +11119,10 @@ fieldset:disabled .btn {
   right: 5px;
   transform: translateY(-50%);
   border-radius: 50%;
+
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-rounded span i {
   color: #fff;
