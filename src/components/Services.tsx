@@ -24,12 +24,12 @@ export default function Services() {
                 digital-first approach that helps businesses thrive, compete,
                 and maximize their profits. <br /> Today, success belongs to
                 those who embrace digital transformation. From{" "}
-                <strong> Branding & Identity</strong> to{" "}
+                <strong> Branding Identity & Design</strong> to{" "}
                 <strong>Digital Marketing</strong> ,{" "}
                 <strong> Website Development</strong> to{" "}
-                <strong>Social Media Management</strong>
-                and <strong> Content Creation</strong>, we empower businesses
-                with the tools they need to stay ahead.
+                <strong>Social Media Management</strong> and{" "}
+                <strong> Content Creation</strong>, we empower businesses with
+                the tools they need to stay ahead.
               </p>
             </div>
           </div>
