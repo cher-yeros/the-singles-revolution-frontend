@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark menu fixed-top">
@@ -7,8 +9,8 @@ export default function Header() {
         <a className="navbar-brand" href="">
           <img src="/assets/images/logo.png" alt="logo image" />
         </a>
-        <button
-          className="navbar-toggler"
+        <a
+          className="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -17,27 +19,24 @@ export default function Header() {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+          {/* <i className="fa-solid fa-bars"></i>{" "} */}
+        </a>
         <div
           className="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a
-                className="nav-link active"
-                aria-current="page"
-                href="index.html"
-              >
+              <Link className="nav-link active" aria-current="page" href={"/"}>
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#services">
                 Services
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="#testimonials">
                 Testimonials
               </a>
@@ -46,7 +45,7 @@ export default function Header() {
               <a className="nav-link" href="#faq">
                 FAQ
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link" href="#portfolio">
                 portfolio

@@ -20,7 +20,10 @@ export default function Hero() {
           {/* <!-- START THE CONTENT FOR THE INTRO  --> */}
           <div className="col-md-6 intros text-start">
             <h1 className="display-2">
-              <span className="display-2--intro" data-aos="fade-down">
+              <span
+                className="display-2--intro aos-init aos-animate"
+                data-aos="fade-down"
+              >
                 ሰላም ? We are Ifnet
               </span>
               <span

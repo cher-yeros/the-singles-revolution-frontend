@@ -6,6 +6,8 @@ import "aos/dist/aos.css";
 
 import "@/assets/css/fontawesome.css";
 import "@/assets/css/style.css";
+import "@/assets/css/gallery.css";
+
 import Header from "@/components/layout/Header";
 import Script from "next/script";
 
@@ -33,10 +35,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
           rel="stylesheet"
         />
+
+        {/* <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        /> */}
 
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"

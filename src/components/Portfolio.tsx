@@ -1,7 +1,6 @@
 "use client";
 
 import Isotope from "isotope-layout";
-import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 
 export default function Portfolio() {
@@ -40,7 +39,31 @@ export default function Portfolio() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <div className="col-md-12 d-flex justify-content-center gap-2">
+          {/* <ul
+            className="col-md-12 d-flex justify-content-center"
+            id="portfolio-flters"
+          >
+            <li
+              className={`${filterKey === "*" ? "filter-active" : ""}`}
+              onClick={handleFilterKeyChange("*")}
+            >
+              All
+            </li>
+
+            {dataFilters.map((filter) => (
+              <li
+                className={`${
+                  filterKey === filter.category ? "filter-active" : ""
+                }`}
+                key={filter.label}
+                onClick={handleFilterKeyChange(filter.category)}
+              >
+                {filter.label}
+              </li>
+            ))}
+          </ul> */}
+
+          <div className="col-md-12 d-flex justify-content-center gap-2 flex-wrap">
             <button
               className={`btn ${
                 filterKey === "*" ? "btn-primary" : "btn-outline-primary"

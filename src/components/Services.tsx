@@ -11,8 +11,8 @@ export default function Services() {
           <div className="col-md-6 border-right">
             <div className="bg-white p-3">
               <h2 className="fw-bold text-capitalize text-center">
-                The New & Better Way to Grow Your Business and Maximize Your
-                Profit!
+                We provide "The New & Better Way" to Grow Your Business and
+                Maximize Your Profit!
               </h2>
             </div>
           </div>
@@ -23,10 +23,13 @@ export default function Services() {
                 introduces <strong>"The New & Better Way"</strong> —a
                 digital-first approach that helps businesses thrive, compete,
                 and maximize their profits. <br /> Today, success belongs to
-                those who embrace digital transformation. From branding to
-                digital marketing, website development to social media
-                management and content creation, we empower businesses with the
-                tools they need to stay ahead.
+                those who embrace digital transformation. From{" "}
+                <strong> Branding & Identity</strong> to{" "}
+                <strong>Digital Marketing</strong> ,{" "}
+                <strong> Website Development</strong> to{" "}
+                <strong>Social Media Management</strong>
+                and <strong> Content Creation</strong>, we empower businesses
+                with the tools they need to stay ahead.
               </p>
             </div>
           </div>
@@ -38,7 +41,7 @@ export default function Services() {
         {/* <!-- Branding & Identity --> */}
 
         <div className="row" data-aos="fade-up">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 order-1 order-md-1 order-first">
             <div className="services__content">
               <div className="icon d-block fas fa-palette "></div>
               <h3 className="display-3--title mt-1">Branding & Identity</h3>
@@ -61,7 +64,7 @@ export default function Services() {
             </div>
           </div>
           <div
-            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end order-2 order-md-2 order-last"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -76,9 +79,10 @@ export default function Services() {
         </div>
 
         {/* <!-- Website & Mobile App Development  --> */}
+
         <div className="row" data-aos="fade-up">
           <div
-            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start"
+            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start order-1 order-md-2 order-last"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -90,7 +94,7 @@ export default function Services() {
               />
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 order-2 order-md-1 order-first">
             <div className="services__content">
               <div className="icon d-block fas fa-code"></div>
               <h3 className="display-3--title mt-1">
@@ -120,7 +124,7 @@ export default function Services() {
 
         {/* <!--  Content Creation & Social Media Management  --> */}
         <div className="row" data-aos="fade-up">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 order-1 order-md-1 order-first">
             <div className="services__content">
               <div className="icon d-block fas fa-video"></div>
               <h3 className="display-3--title mt-1">
@@ -145,7 +149,7 @@ export default function Services() {
             </div>
           </div>
           <div
-            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end order-2 order-md-2 order-last"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -162,7 +166,7 @@ export default function Services() {
         {/* <!--  Digital Marketing & Growth Strategies  --> */}
         <div className="row" data-aos="fade-up">
           <div
-            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start"
+            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start order-1 order-md-2 order-last"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -174,7 +178,8 @@ export default function Services() {
               />
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 order-2 order-md-1 order-first">
             <div className="services__content">
               <div className="icon d-block fas fa-bullhorn "></div>
               <h3 className="display-3--title mt-1">
