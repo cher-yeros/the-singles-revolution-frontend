@@ -27,7 +27,7 @@ export default function Portfolio() {
     <section id="portfolio" className="portfolio">
       <div className="container">
         <div className="row text-center mt-5" data-aos="fade-up">
-          <h1 className="display-3 fw-bold text-capitalize">Latest work</h1>
+          <h1 className="display-3 fw-bold text-capitalize">Portfolio</h1>
           <div className="heading-line"></div>
           <p className="lead">
             Explore our work and see how we illuminate digital innovation
