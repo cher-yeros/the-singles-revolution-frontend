@@ -46,17 +46,17 @@ export default function Contact() {
                 <div className="col-lg-6 col-md mb-3">
                   <input
                     type="text"
-                    name="last_name"
-                    placeholder="First Name"
+                    name="full_name"
+                    placeholder="Full Name"
                     id="inputFirstName"
                     className="shadow form-control form-control-lg"
                   />
                 </div>
                 <div className="col-lg-6 col-md mb-3">
                   <input
-                    type="text"
-                    name="first_name"
-                    placeholder="Last Name"
+                    type="tel"
+                    name="phone_number"
+                    placeholder="Phone Number"
                     id="inputLastName"
                     className="shadow form-control form-control-lg"
                   />

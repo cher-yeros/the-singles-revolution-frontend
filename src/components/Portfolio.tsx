@@ -97,7 +97,7 @@ export default function Portfolio() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            {portfolios.map((portfolio) => (
+            {/* {portfolios.map((portfolio) => (
               <div
                 className={`col-lg-4 col-md-6 filter-item ${portfolio.category}`}
               >
@@ -112,6 +112,39 @@ export default function Portfolio() {
                     <div className="caption">
                       <h4>{portfolio.title}</h4>
                       <p>{portfolio.name}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))} */}
+
+            {websites.map((portfolio) => (
+              <div
+                className={`col-lg-4 col-md-6 filter-item ${portfolio.category}`}
+              >
+                <div className="portfolio-box shadow">
+                  <a href={portfolio.link} target="_blank">
+                    <img
+                      src={portfolio.image}
+                      alt={portfolio.title}
+                      title={portfolio.title}
+                      className="img-fluid"
+                    />
+                  </a>
+
+                  {/* <iframe
+                    width="100%"
+                    height="100%"
+                    src={portfolio.link}
+                    title={portfolio.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="video-embed"
+                  ></iframe> */}
+                  <div className="portfolio-info">
+                    <div className="caption">
+                      <h4>{portfolio.title}</h4>
+                      {/* <p>{portfolio.title}</p> */}
                     </div>
                   </div>
                 </div>
@@ -139,39 +172,6 @@ export default function Portfolio() {
                     className="video-embed"
                   ></iframe>
 
-                  <div className="portfolio-info">
-                    <div className="caption">
-                      <h4>{portfolio.title}</h4>
-                      {/* <p>{portfolio.title}</p> */}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-
-            {websites.map((portfolio) => (
-              <div
-                className={`col-lg-4 col-md-6 filter-item ${portfolio.category}`}
-              >
-                <div className="portfolio-box shadow">
-                  <a href={portfolio.link} target="_blank">
-                    <img
-                      src={portfolio.image}
-                      alt={portfolio.title}
-                      title={portfolio.title}
-                      className="img-fluid"
-                    />
-                  </a>
-
-                  {/* <iframe
-                    width="100%"
-                    height="100%"
-                    src={portfolio.link}
-                    title={portfolio.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="video-embed"
-                  ></iframe> */}
                   <div className="portfolio-info">
                     <div className="caption">
                       <h4>{portfolio.title}</h4>
