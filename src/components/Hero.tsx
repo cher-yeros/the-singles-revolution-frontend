@@ -24,7 +24,7 @@ export default function Hero() {
                 className="display-2--intro aos-init aos-animate"
                 data-aos="fade-down"
               >
-                ሰላም ? We are Ifnet
+                ሰላም ? We are Ifnet Digital Hub
               </span>
               <span
                 className="display-2--description lh-base"
