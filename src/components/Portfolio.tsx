@@ -1,6 +1,7 @@
 "use client";
 
 import Isotope from "isotope-layout";
+import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 
 export default function Portfolio() {
