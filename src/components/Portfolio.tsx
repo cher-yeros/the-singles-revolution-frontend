@@ -345,6 +345,27 @@ const websites = [
     link: "https://jpstvethiopia.com/",
   },
   {
+    image: "/assets/images/portfolio/ifnet.png",
+    title: "Ifnet Digital Hub",
+    // desc: "project name goes here 1",
+    category: "web-development",
+    link: "https://ifnet-digital-hub.vercel.app/",
+  },
+  {
+    image: "/assets/images/portfolio/man.png",
+    title: "Manyazewal Eshetu Gibi",
+    // desc: "project name goes here 1",
+    category: "web-development",
+    link: "https://manyazewal-eshetu.vercel.app/podcast",
+  },
+  {
+    image: "/assets/images/portfolio/str_africa.png",
+    title: "STR Africa",
+    // desc: "project name goes here 1",
+    category: "web-development",
+    link: "https://str-africa.vercel.app/",
+  },
+  {
     image: "/assets/images/portfolio/grace_furniture.png",
     title: "Grace Furniture",
     // desc: "project name goes here 1",
