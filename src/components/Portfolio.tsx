@@ -345,10 +345,61 @@ const websites = [
     link: "https://jpstvethiopia.com/",
   },
   {
+    image: "/assets/images/portfolio/grace_furniture.png",
+    title: "Grace Furniture",
+    // desc: "project name goes here 1",
+    category: "web-development",
+    link: "https://grace-furniture.vercel.app/",
+  },
+  {
     image: "/assets/images/portfolio/matrix.png",
     title: "Matrix 360 ERP",
     // desc: "project name goes here 1",
     category: "web-development",
     link: "https://matrix360erpdev.com/",
   },
+  {
+    image: "/assets/images/portfolio/bethel_tv.png",
+    title: "Bethel TV",
+    category: "web-development",
+    link: "https://bethel-tv.netlify.app/",
+  },
+  {
+    image: "/assets/images/portfolio/alemneh.png",
+    title: "Memory of Alemneh Jenberu",
+    category: "web-development",
+    link: "https://memory-of-alemneh-jenberu.netlify.app/",
+  },
+  {
+    image: "/assets/images/portfolio/skill_connect.png",
+    title: "Skill Connect Ethiopia",
+    category: "web-development",
+    link: "https://skill-connect-ethiopia.netlify.app/",
+  },
+  {
+    image: "/assets/images/portfolio/url_shortener.png",
+    title: "Custom URL Shortener",
+    category: "web-development",
+    link: "https://custom-url-shortener.netlify.app/",
+  },
+  {
+    image: "/assets/images/portfolio/dynamic_cert.png",
+    title: "Dynamic Web Certificates",
+    category: "web-development",
+    link: "https://dynamic-web-certificates.netlify.app/",
+  },
+  {
+    image: "/assets/images/portfolio/ethio_sci_tech.png",
+    title: "Ethio Science & Tech",
+    category: "web-development",
+    link: "https://ethio-scie-tech.netlify.app/",
+  },
 ];
+
+// https://bethel-tv.netlify.app/
+// https://memory-of-alemneh-jenberu.netlify.app/
+// https://skill-connect-ethiopia.netlify.app/
+// https://custom-url-shortener.netlify.app/
+// https://dynamic-web-certificates.netlify.app/
+// https://dynamic-web-certificates.netlify.app/
+// https://ethio-scie-tech.netlify.app/
