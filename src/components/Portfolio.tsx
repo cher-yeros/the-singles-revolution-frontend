@@ -118,6 +118,39 @@ export default function Portfolio() {
               </div>
             ))} */}
 
+            {designs.map((portfolio) => (
+              <div
+                className={`col-lg-4 col-md-6 filter-item ${portfolio.category}`}
+              >
+                <div className="portfolio-box shadow">
+                  <a href={portfolio.link} target="_blank">
+                    <img
+                      src={portfolio.image}
+                      alt={portfolio.title}
+                      title={portfolio.title}
+                      className="img-fluid"
+                    />
+                  </a>
+
+                  {/* <iframe
+                    width="100%"
+                    height="100%"
+                    src={portfolio.link}
+                    title={portfolio.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="video-embed"
+                  ></iframe> */}
+                  <div className="portfolio-info">
+                    <div className="caption">
+                      <h4>{portfolio.title}</h4>
+                      {/* <p>{portfolio.title}</p> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+
             {websites.map((portfolio) => (
               <div
                 className={`col-lg-4 col-md-6 filter-item ${portfolio.category}`}
@@ -221,39 +254,71 @@ const dataFilters = [
   },
 ];
 
-const portfolios = [
+const designs = [
   {
-    image: "/assets/images/portfolio/portfolio-3.jpg",
-    alt: "portfolio 3 image",
-    title: "portfolio 3 picture",
-    name: "project name goes here 3",
-    category: "digital-marketing",
+    image:
+      "/assets/images/portfolio/design/papa_garden-resort__logo_cover-image-09.jpg",
+    title: "Papa Resort Logo",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
   },
   {
-    image: "/assets/images/portfolio/portfolio-4.jpg",
-    alt: "portfolio 4 image",
-    title: "portfolio 4 picture",
-    name: "project name goes here 4",
+    image: "/assets/images/portfolio/design/enganing_o1.jpg",
+    title: "Hulu Play Engaining",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
+    image: "/assets/images/portfolio/design/greenmart_o21@1.5x.jpg",
+    title: "Hulu Play Green Mart",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
+    image: "/assets/images/portfolio/design/hello_bus_o2.jpg",
+    title: "Hulu Play Hello Bus",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
+    image:
+      "/assets/images/portfolio/design/herbal_melly_social_media_post_design.jpg",
+    title: "Herbal Melly",
+    // name: "project name goes here 8",
     category: "branding-and-identity",
   },
 
   {
-    image: "/assets/images/portfolio/portfolio-6.jpg",
-    alt: "portfolio 6 image",
-    title: "portfolio 6 picture",
-    name: "project name goes here 6",
-    category: "digital-marketing",
+    image: "/assets/images/portfolio/design/sharen_o3.jpg",
+    title: "Sharen Furniture",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
   },
-
   {
-    image: "/assets/images/portfolio/portfolio-8.jpg",
-    alt: "portfolio 8 image",
-    title: "portfolio 8 picture",
-    name: "project name goes here 8",
+    image: "/assets/images/portfolio/design/sheren_3o.jpg",
+    title: "Sharen Furniture",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
+    image: "/assets/images/portfolio/design/sheren_3o4.jpg",
+    title: "Sharen Furniture",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
+    image: "/assets/images/portfolio/design/sheren_5o2.jpg",
+    title: "Sharen Furniture",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
+    image: "/assets/images/portfolio/design/Yebuna_poster_1.jpg",
+    title: "Ye-Buna",
+    // name: "project name goes here 8",
     category: "branding-and-identity",
   },
 ];
-
 const contentCreations = [
   {
     image: "/assets/images/portfolio/portfolio-1.jpg",
