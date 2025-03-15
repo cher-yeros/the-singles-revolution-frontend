@@ -123,14 +123,14 @@ export default function Portfolio() {
                 className={`col-lg-4 col-md-6 filter-item ${portfolio.category}`}
               >
                 <div className="portfolio-box shadow">
-                  <a href={portfolio.link} target="_blank">
-                    <img
-                      src={portfolio.image}
-                      alt={portfolio.title}
-                      title={portfolio.title}
-                      className="img-fluid"
-                    />
-                  </a>
+                  {/* <a href={portfolio.link} target="_blank"> */}
+                  <img
+                    src={portfolio.image}
+                    alt={portfolio.title}
+                    title={portfolio.title}
+                    className="img-fluid"
+                  />
+                  {/* </a> */}
 
                   {/* <iframe
                     width="100%"
@@ -231,7 +231,7 @@ const dataFilters = [
   {
     className: "",
     dataFilter: ".branding-and-identity",
-    label: "Branding & Identity",
+    label: "Branding & Design",
     category: "branding-and-identity",
   },
   {
