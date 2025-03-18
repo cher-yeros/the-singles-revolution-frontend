@@ -62,7 +62,7 @@ export default function Header() {
             type="button"
             className="rounded-pill btn-rounded"
           >
-            +251 951 519 439
+            +251 985 519 439
             <span>
               <i className="fas fa-phone-alt"></i>
             </span>

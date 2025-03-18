@@ -122,13 +122,38 @@ export default function Portfolio() {
               <div
                 className={`col-lg-4 col-md-6 filter-item ${portfolio.category}`}
               >
-                <div className="portfolio-box shadow">
+                <div
+                  className="portfolio-box shadow"
+                  style={{
+                    position: "relative",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
                   {/* <a href={portfolio.link} target="_blank"> */}
                   <img
                     src={portfolio.image}
                     alt={portfolio.title}
                     title={portfolio.title}
                     className="img-fluid"
+                    style={{
+                      height: "auto",
+                      position: "absolute",
+                      left: 0,
+                      opacity: 0.5,
+                      filter: "blur(10px)",
+                      zIndex: 10,
+                    }}
+                  />
+                  <img
+                    src={portfolio.image}
+                    alt={portfolio.title}
+                    title={portfolio.title}
+                    className="img-fluid"
+                    style={{
+                      width: "auto",
+                      zIndex: 20,
+                    }}
                   />
                   {/* </a> */}
 
@@ -155,13 +180,47 @@ export default function Portfolio() {
               <div
                 className={`col-lg-4 col-md-6 filter-item ${portfolio.category}`}
               >
-                <div className="portfolio-box shadow">
-                  <a href={portfolio.link} target="_blank">
+                <div
+                  className="portfolio-box shadow"
+                  style={{
+                    position: "relative",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <a
+                    href={portfolio.link}
+                    target="_blank"
+                    style={{
+                      // position: "relative",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
                     <img
                       src={portfolio.image}
                       alt={portfolio.title}
                       title={portfolio.title}
                       className="img-fluid"
+                      style={{
+                        width: "auto",
+                        position: "absolute",
+                        left: 0,
+                        opacity: 0.5,
+                        filter: "blur(10px)",
+                        zIndex: 10,
+                      }}
+                    />
+
+                    <img
+                      src={portfolio.image}
+                      alt={portfolio.title}
+                      title={portfolio.title}
+                      className="img-fluid"
+                      style={{
+                        height: "auto",
+                        zIndex: 20,
+                      }}
                     />
                   </a>
 
@@ -319,6 +378,7 @@ const designs = [
     category: "branding-and-identity",
   },
 ];
+
 const contentCreations = [
   {
     image: "/assets/images/portfolio/portfolio-1.jpg",
