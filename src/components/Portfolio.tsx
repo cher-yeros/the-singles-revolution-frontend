@@ -327,7 +327,7 @@ const designs = [
     category: "branding-and-identity",
   },
   {
-    image: "/assets/images/portfolio/eyomer1.jpg",
+    image: "/assets/images/portfolio/design/eyomer1.jpg",
     title: "Eyomer Hotel",
     // name: "project name goes here 8",
     category: "branding-and-identity",
@@ -339,7 +339,7 @@ const designs = [
     category: "branding-and-identity",
   },
   {
-    image: "/assets/images/portfolio/design/eyomer3.jpg",
+    image: "/assets/images/portfolio/design/eyomer.jpg",
     title: "Eyomer Hotel",
     // name: "project name goes here 8",
     category: "branding-and-identity",
