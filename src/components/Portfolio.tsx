@@ -493,6 +493,27 @@ const contentCreations = [
 
 const websites = [
   {
+    image: "/assets/images/portfolio/forward.png",
+    title: "Forward Logistics Technology",
+    // desc: "project name goes here 1",
+    category: "web-development",
+    link: "https://forward-logistics-landing.vercel.app/",
+  },
+  {
+    image: "/assets/images/portfolio/finaloop.png",
+    title: "Finaloop AI",
+    // desc: "project name goes here 1",
+    category: "web-development",
+    link: "https://www.finaloopai.com/",
+  },
+  {
+    image: "/assets/images/portfolio/eth_scie_tech.png",
+    title: "Ethio-Sci Tech Engineering Group PLC",
+    // desc: "project name goes here 1",
+    category: "web-development",
+    link: "https://ethio-sci-tech-client-r9iy.vercel.app/",
+  },
+  {
     image: "/assets/images/portfolio/anointing.png",
     title: "Anointing TV",
     // desc: "project name goes here 1",
