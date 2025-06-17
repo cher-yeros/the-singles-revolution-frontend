@@ -315,6 +315,43 @@ const dataFilters = [
 
 const designs = [
   {
+    image: "/assets/images/portfolio/design/royal_f.jpg",
+    title: "Royal Furniture",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
+    image: "/assets/images/portfolio/design/meraki.jpg",
+    title: "Meraki Technology & Engineering PLC",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
+    image: "/assets/images/portfolio/eyomer1.jpg",
+    title: "Eyomer Hotel",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
+    image: "/assets/images/portfolio/design/eyomer2.jpg",
+    title: "Eyomer Hotel",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
+    image: "/assets/images/portfolio/design/eyomer3.jpg",
+    title: "Eyomer Hotel",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
+    image:
+      "/assets/images/portfolio/design/papa_garden-resort__logo_cover-image-09.jpg",
+    title: "Papa Resort Logo",
+    // name: "project name goes here 8",
+    category: "branding-and-identity",
+  },
+  {
     image:
       "/assets/images/portfolio/design/papa_garden-resort__logo_cover-image-09.jpg",
     title: "Papa Resort Logo",
