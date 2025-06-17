@@ -273,6 +273,64 @@ export default function Portfolio() {
                 </div>
               </div>
             ))}
+
+            {smms.map((portfolio) => (
+              <div
+                className={`col-lg-4 col-md-6 filter-item ${portfolio.category}`}
+              >
+                <div
+                  className="portfolio-box shadow"
+                  style={{
+                    position: "relative",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  {/* <a href={portfolio.link} target="_blank"> */}
+                  <img
+                    src={portfolio.image}
+                    alt={portfolio.title}
+                    title={portfolio.title}
+                    className="img-fluid"
+                    style={{
+                      height: "auto",
+                      position: "absolute",
+                      left: 0,
+                      opacity: 0.5,
+                      filter: "blur(10px)",
+                      zIndex: 10,
+                    }}
+                  />
+                  <img
+                    src={portfolio.image}
+                    alt={portfolio.title}
+                    title={portfolio.title}
+                    className="img-fluid"
+                    style={{
+                      width: "auto",
+                      zIndex: 20,
+                    }}
+                  />
+                  {/* </a> */}
+
+                  {/* <iframe
+                    width="100%"
+                    height="100%"
+                    src={portfolio.link}
+                    title={portfolio.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="video-embed"
+                  ></iframe> */}
+                  <div className="portfolio-info">
+                    <div className="caption">
+                      <h4>{portfolio.title}</h4>
+                      {/* <p>{portfolio.title}</p> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </>
       </div>
@@ -598,6 +656,64 @@ const websites = [
     category: "web-development",
     link: "https://ethio-scie-tech.netlify.app/",
   },
+];
+
+const smms = [
+  {
+    image: "/assets/images/portfolio/smm/royal.png",
+    title: "Royal Foam & Furniture",
+    category: "digital-marketing",
+  },
+  {
+    image: "/assets/images/portfolio/smm/eyomer.png",
+    title: "Eyomer Hotel",
+    category: "digital-marketing",
+    // link: [
+    //   {
+    //     icon: "fa-facebook",
+    //     link: "https://forward-logistics-landing.vercel.app/",
+    //   },
+    //   {
+    //     icon: "fa-instagram",
+    //     link: "https://forward-logistics-landing.vercel.app/",
+    //   },
+    //   {
+    //     icon: "fa-tiktok",
+    //     link: "https://forward-logistics-landing.vercel.app/",
+    //   },
+    // ],
+  },
+  {
+    image: "/assets/images/portfolio/smm/yoyo.png",
+    title: "YoYo Socks",
+    category: "digital-marketing",
+  },
+  {
+    image: "/assets/images/portfolio/smm/kingdom.png",
+    title: "Kingdom Real Estate",
+    category: "digital-marketing",
+  },
+
+  {
+    image: "/assets/images/portfolio/smm/metek.png",
+    title: "Metek Wedding Planner",
+    category: "digital-marketing",
+  },
+  {
+    image: "/assets/images/portfolio/smm/meraki.jpg",
+    title: "Meraki Technology & Engineering PLC",
+    category: "digital-marketing",
+  },
+  {
+    image: "/assets/images/portfolio/smm/ednam.jpg",
+    title: "Ednam Catering",
+    category: "digital-marketing",
+  },
+  // {
+  //   image: "/assets/images/portfolio/smm/ednam_catering.png",
+  //   title: "Ednam Catering",
+  //   category: "digital-marketing",
+  // },
 ];
 
 // https://bethel-tv.netlify.app/
