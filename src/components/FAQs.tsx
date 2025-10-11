@@ -1,152 +1,80 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 export default function FAQs() {
+  const [activeFaq, setActiveFaq] = useState(0);
+
+  const faqs = [
+    {
+      id: 0,
+      question: "What is The Singles Revolution?",
+      answer:
+        "The Singles Revolution is not a dating campaign — it is a global discipleship movement. A bold and urgent call for single young adults around the world to discover biblical identity, spiritual wholeness, and Christ-centered purpose. It redefines singleness as a holy assignment, not a holding pattern.",
+    },
+    {
+      id: 1,
+      question: "What does it mean to be 'Un-Single'?",
+      answer:
+        "To be 'Un-Single' means to live free and fully devoted to Christ: Unattached (free from dependence on others for identity), Unhurried (trusting God's timing without cultural pressure), Unworried (resting in peace rather than anxiety about the future), and Unto the Lord (living with Jesus at the center of all pursuits).",
+    },
+    {
+      id: 2,
+      question: "How can I get a free copy of 'Single and Ready'?",
+      answer:
+        "The movement aims to put a free copy of 'Single and Ready' into the hands of 20,000 young adults worldwide. Visit our website at thesinglesrevolution.com to request your free copy and join the global discipleship movement.",
+    },
+    {
+      id: 3,
+      question: "What is the mission of The Singles Revolution?",
+      answer:
+        "To evangelize, disciple, and mobilize single young adults by putting a free copy of 'Single and Ready' into the hands of 20,000 young adults worldwide, sparking a global discipleship movement rooted in biblical identity, Spirit-led relationships, and Christ-centered transformation.",
+    },
+    {
+      id: 4,
+      question: "When is the global discussion starting?",
+      answer:
+        "The global discussion 'Single? God's Calling' launches on November 15, 2025. This worldwide conversation will explore what singleness is, how singleness is useful, and what the ultimate goal of singleness is according to God's design.",
+    },
+    {
+      id: 5,
+      question: "How is this different from other dating advice?",
+      answer:
+        "This is not about dating techniques or finding 'the one.' The Singles Revolution focuses on active spiritual formation versus passive waiting. It shifts the question from 'When will I meet the one?' to 'Who is God forming me to become?' It's about righteousness over romance, becoming over finding.",
+    },
+  ];
+
+  const toggleFaq = (id: number) => {
+    setActiveFaq(activeFaq === id ? -1 : id);
+  };
+
   return (
-    <section id="faq" className="faq">
+    <section id="faq" className="faq section">
       <div className="container">
-        <div className="row text-center">
-          <h1 className="display-3 fw-bold text-uppercase">faq</h1>
-          <div className="heading-line"></div>
-          <p className="lead">
-            frequently asked questions, get knowledge befere hand
-          </p>
-        </div>
-        {/* <!-- ACCORDION CONTENT  --> */}
-        <div className="row mt-5">
-          <div className="col-md-12">
-            <div className="accordion" id="accordionExample">
-              {/* <!-- ACCORDION ITEM 1 --> */}
-              <div className="accordion-item shadow mb-3">
-                <h2 className="accordion-header" id="headingOne">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    What are the main features?
-                  </button>
-                </h2>
+        <div className="row justify-content-center">
+          <div className="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div className="faq-container">
+              {faqs.map((faq) => (
                 <div
-                  id="collapseOne"
-                  className="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
+                  key={faq.id}
+                  className={`faq-item ${
+                    activeFaq === faq.id ? "faq-active" : ""
+                  }`}
+                  onClick={() => toggleFaq(faq.id)}
                 >
-                  <div className="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                  <h3>{faq.question}</h3>
+                  <div className="faq-content">
+                    <p>{faq.answer}</p>
                   </div>
+                  <i
+                    className={`faq-toggle bi ${
+                      activeFaq === faq.id
+                        ? "bi-chevron-down"
+                        : "bi-chevron-right"
+                    }`}
+                  ></i>
                 </div>
-              </div>
-              {/* <!-- ACCORDION ITEM 2 --> */}
-              <div className="accordion-item shadow mb-3">
-                <h2 className="accordion-header" id="headingTwo">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    do i have to pay again after trial
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              {/* <!-- ACCORDION ITEM 3 --> */}
-              <div className="accordion-item shadow mb-3">
-                <h2 className="accordion-header" id="headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    How can I get started after trial?
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              {/* <!-- ACCORDION ITEM 4 --> */}
-              <div className="accordion-item shadow mb-3">
-                <h2 className="accordion-header" id="headingFour">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    Can I be refunded if am not satisfied?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

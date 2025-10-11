@@ -1,11 +1,19 @@
 "use client";
 
+import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Features from "@/components/Features";
+import Features2 from "@/components/Features2";
+import FeaturesCard from "@/components/FeaturesCard";
 import Hero from "@/components/Hero";
-import Footer from "@/components/layout/Footer";
 // import Portfolio from "@/components/Portfolio";
+import CTA from "@/components/CTA";
+import FAQs from "@/components/FAQs";
 import Services from "@/components/Services";
+import Stats from "@/components/Stats";
 import Testimonials from "@/components/Testimonials";
+import Mission from "@/components/Mission";
+import BookReview from "@/components/BookReview";
 import dynamic from "next/dynamic";
 
 const Portfolio = dynamic(() => import("@/components/Portfolio"), {
@@ -17,25 +25,29 @@ export default function Home() {
     <>
       <Hero />
 
-      {/* <Companies /> */}
+      <About />
 
-      <Services />
+      <Mission />
 
-      {/* <Gallery /> */}
+      <Features />
 
-      <Portfolio />
+      {/* <FeaturesCard /> */}
 
-      {/* <Testimonials /> */}
+      <Features2 />
 
-      {/* <FAQs /> */}
+      <BookReview />
+
+      <CTA />
+
+      <Testimonials />
+
+      <Stats />
+
+      {/* <Services /> */}
+
+      <FAQs />
 
       <Contact />
-
-      <Footer />
-
-      <a href="#" className="shadow btn-primary rounded-circle back-to-top">
-        <i className="fas fa-chevron-up"></i>
-      </a>
     </>
   );
 }

@@ -1,208 +1,204 @@
 export default function Services() {
   return (
-    <section id="services" className="services">
-      <div className="container">
-        <div className="row text-center" data-aos="fade-up">
-          <h1 className="display-3 fw-bold">Our Services</h1>
-          <div className="heading-line mb-1"></div>
-        </div>
-        {/* <!-- START THE DESCRIPTION CONTENT  --> */}
-        <div className="row pt-2 pb-2 mt-0 mb-3" data-aos="fade-up">
-          <div className="col-md-6 border-right">
-            <div className="bg-white p-3">
-              <h2 className="fw-bold text-capitalize text-center">
-                We provide "The New & Better Way" to Grow Your Business and
-                Maximize Your Profit!
-              </h2>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="bg-white p-4 text-start">
-              <p className="">
-                The world is changing, and so is the way businesses grow. Ifnet
-                introduces <strong>"The New & Better Way"</strong> —a
-                digital-first approach that helps businesses thrive, compete,
-                and maximize their profits. <br /> Today, success belongs to
-                those who embrace digital transformation. From{" "}
-                <strong> Branding Identity & Design</strong> to{" "}
-                <strong>Digital Marketing</strong> ,{" "}
-                <strong> Website Development</strong> to{" "}
-                <strong>Social Media Management</strong> and{" "}
-                <strong> Content Creation</strong>, we empower businesses with
-                the tools they need to stay ahead.
-              </p>
-            </div>
-          </div>
-        </div>
+    <section id="services" className="services section">
+      {/* <!-- Section Title --> */}
+      <div className="container section-title" data-aos="fade-up">
+        <span className="description-title">Services</span>
+        <h2>Services</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
       </div>
+      {/* <!-- End Section Title --> */}
 
-      {/* <!-- START THE CONTENT FOR THE SERVICES  --> */}
-      <div className="container">
-        {/* <!-- Branding & Identity --> */}
-
-        <div className="row" data-aos="fade-up">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 order-1 order-md-1 order-first">
-            <div className="services__content">
-              <div className="icon d-block fas fa-palette "></div>
-              <h3 className="display-3--title mt-1">Branding & Identity</h3>
-              <p className="lh-lg">
-                Your brand is more than just a logo—it’s how the world perceives
-                your business. We create unique, impactful, and memorable brand
-                identities that help you stand out. From logo design to complete
-                brand guidelines, we ensure your brand is consistent,
-                professional, and compelling.
-              </p>
-              <button
-                type="button"
-                className="rounded-pill btn-rounded border-primary"
+      <div className="container" data-aos="fade-up" data-aos-delay="100">
+        <div className="row align-items-center">
+          <div className="col-lg-6">
+            <div
+              className="intro-content"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <div
+                className="section-badge mb-3"
+                data-aos="zoom-in"
+                data-aos-delay="50"
               >
-                Learn more
-                <span>
-                  <i className="fas fa-arrow-right"></i>
-                </span>
-              </button>
+                <i className="bi bi-star-fill"></i>
+                <span>WHAT WE DO</span>
+              </div>
+              <h2 className="section-heading mb-4">
+                Transforming Ideas into Outstanding Results
+              </h2>
+              <p className="section-description mb-4">
+                We believe in crafting exceptional experiences that drive
+                meaningful growth for your business. Our dedicated team combines
+                creativity with technical excellence to deliver solutions that
+                make a difference.
+              </p>
+              <a
+                href="#"
+                className="cta-button"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
+                Explore Our Work
+              </a>
             </div>
           </div>
-          <div
-            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end order-2 order-md-2 order-last"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div className="services__pic">
+          <div className="col-lg-6">
+            <div
+              className="hero-visual"
+              data-aos="fade-left"
+              data-aos-delay="150"
+            >
               <img
-                src="/assets/images/services/brand_identity.jpg"
-                alt="Branding & Identity"
+                src="assets/img/services/services-1.webp"
+                alt="Services"
                 className="img-fluid"
               />
             </div>
           </div>
         </div>
 
-        {/* <!-- Website & Mobile App Development  --> */}
+        <div className="services-grid mt-5">
+          <div className="row g-4">
+            <div
+              className="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div className="service-card">
+                <div className="card-number">
+                  <span>01</span>
+                </div>
+                <div className="card-content">
+                  <h5 className="service-title">
+                    <a href="#">Custom Application Development</a>
+                  </h5>
+                  <p className="service-description">
+                    Building robust applications tailored to your specific needs
+                    using modern frameworks and cutting-edge technologies.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* <!-- End Service Card --> */}
 
-        <div className="row" data-aos="fade-up">
-          <div
-            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start order-1 order-md-2 order-last"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div className="services__pic">
-              <img
-                src="/assets/images/services/development.jpg"
-                alt="Web & Mobile App Development"
-                className="img-fluid"
-              />
+            <div
+              className="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div className="service-card">
+                <div className="card-number">
+                  <span>02</span>
+                </div>
+                <div className="card-content">
+                  <h5 className="service-title">
+                    <a href="#">Strategic Planning</a>
+                  </h5>
+                  <p className="service-description">
+                    Comprehensive roadmaps that align technology solutions with
+                    your business objectives and market opportunities.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 order-2 order-md-1 order-first">
-            <div className="services__content">
-              <div className="icon d-block fas fa-code"></div>
-              <h3 className="display-3--title mt-1">
-                Website & Mobile App Development
-              </h3>
-              <p className="lh-lg">
-                A strong online presence starts with a high-performing website
-                and a user-friendly mobile app. We design and develop modern,
-                responsive, and conversion-driven platforms tailored to your
-                business needs. Whether it's an e-commerce store, a corporate
-                website, or a mobile app for services like booking, delivery, or
-                customer engagement, we bring your vision to life with seamless
-                functionality and intuitive design.
-              </p>
-              <button
-                type="button"
-                className="rounded-pill btn-rounded border-primary"
-              >
-                Learn more
-                <span>
-                  <i className="fas fa-arrow-right"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
+            {/* <!-- End Service Card --> */}
 
-        {/* <!--  Content Creation & Social Media Management  --> */}
-        <div className="row" data-aos="fade-up">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 order-1 order-md-1 order-first">
-            <div className="services__content">
-              <div className="icon d-block fas fa-video"></div>
-              <h3 className="display-3--title mt-1">
-                Content Creation & Social Media Management
-              </h3>
-              <p className="lh-lg">
-                Engaging content is key to digital success. We help businesses
-                create, manage, and optimize their social media presence with
-                high-quality visuals, videos, and written content. Our
-                strategies build trust, increase engagement, and drive sales by
-                keeping your audience connected to your brand.
-              </p>
-              <button
-                type="button"
-                className="rounded-pill btn-rounded border-primary"
-              >
-                Learn more
-                <span>
-                  <i className="fas fa-arrow-right"></i>
-                </span>
-              </button>
+            <div
+              className="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div className="service-card">
+                <div className="card-number">
+                  <span>03</span>
+                </div>
+                <div className="card-content">
+                  <h5 className="service-title">
+                    <a href="#">Identity Design</a>
+                  </h5>
+                  <p className="service-description">
+                    Creating compelling visual narratives that resonate with
+                    your audience and strengthen brand recognition across all
+                    touchpoints.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end order-2 order-md-2 order-last"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div className="services__pic">
-              <img
-                src="/assets/images/services/content_creation.jpg"
-                alt="Contact Creation"
-                className="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
+            {/* <!-- End Service Card --> */}
 
-        {/* <!--  Digital Marketing & Growth Strategies  --> */}
-        <div className="row" data-aos="fade-up">
-          <div
-            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start order-1 order-md-2 order-last"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div className="services__pic">
-              <img
-                src="/assets/images/services/digital_marketing.jpg"
-                alt="Digital Marketing"
-                className="img-fluid"
-              />
+            <div
+              className="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div className="service-card">
+                <div className="card-number">
+                  <span>04</span>
+                </div>
+                <div className="card-content">
+                  <h5 className="service-title">
+                    <a href="#">Digital Marketing</a>
+                  </h5>
+                  <p className="service-description">
+                    Maximizing your online presence through targeted campaigns
+                    that drive engagement and convert visitors into loyal
+                    customers.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
+            {/* <!-- End Service Card --> */}
 
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 order-2 order-md-1 order-first">
-            <div className="services__content">
-              <div className="icon d-block fas fa-bullhorn "></div>
-              <h3 className="display-3--title mt-1">
-                {" "}
-                Digital Marketing & Growth Strategies
-              </h3>
-              <p className="lh-lg">
-                Marketing isn’t just about being online—it’s about reaching the
-                right people at the right time. We provide SEO, paid advertising
-                (Google & social media ads), email marketing, and data-driven
-                strategies to grow your business. Our approach is designed to
-                maximize visibility, attract customers, and boost revenue.
-              </p>
-              <button
-                type="button"
-                className="rounded-pill btn-rounded border-primary"
-              >
-                Learn more
-                <span>
-                  <i className="fas fa-arrow-right"></i>
-                </span>
-              </button>
+            <div
+              className="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div className="service-card">
+                <div className="card-number">
+                  <span>05</span>
+                </div>
+                <div className="card-content">
+                  <h5 className="service-title">
+                    <a href="#">User Experience Design</a>
+                  </h5>
+                  <p className="service-description">
+                    Crafting intuitive interfaces that prioritize user needs
+                    while delivering seamless interactions across desktop and
+                    mobile platforms.
+                  </p>
+                </div>
+              </div>
             </div>
+            {/* <!-- End Service Card --> */}
+
+            <div
+              className="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div className="service-card">
+                <div className="card-number">
+                  <span>06</span>
+                </div>
+                <div className="card-content">
+                  <h5 className="service-title">
+                    <a href="#">Data Intelligence</a>
+                  </h5>
+                  <p className="service-description">
+                    Transforming raw data into actionable insights that inform
+                    strategic decisions and optimize business performance
+                    effectively.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* <!-- End Service Card -->  */}
           </div>
         </div>
       </div>
