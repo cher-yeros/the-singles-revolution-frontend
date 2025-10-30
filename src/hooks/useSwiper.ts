@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import type Swiper from "swiper";
 
 export const useSwiper = () => {
   useEffect(() => {
@@ -40,7 +41,7 @@ export const useSwiper = () => {
       new Swiper(element as HTMLElement, {
         ...config,
         on: {
-          slideChange: function () {
+          slideChange: function (this: Swiper) {
             // Handle tab switching logic here
             const activeIndex = this.activeIndex;
             const tabs = document.querySelectorAll(".tab-button");
