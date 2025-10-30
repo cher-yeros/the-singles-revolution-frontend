@@ -27,15 +27,15 @@ export default function Home() {
 
       <About />
 
-      <Mission />
+      {/* <Mission /> */}
 
       <Features />
 
       {/* <FeaturesCard /> */}
 
-      <Features2 />
+      {/* <Features2 /> */}
 
-      <BookReview />
+      {/* <BookReview /> */}
 
       <CTA />
 

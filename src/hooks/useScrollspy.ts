@@ -12,7 +12,7 @@ export const useScrollspy = () => {
         if (!link.hash) return;
 
         const section = document.querySelector(link.hash);
-        if (!section) return;
+        if (!section || !(section instanceof HTMLElement)) return;
 
         const position = window.scrollY + 200;
         const sectionTop = section.offsetTop;

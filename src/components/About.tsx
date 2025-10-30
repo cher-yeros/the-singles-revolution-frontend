@@ -126,7 +126,7 @@ export default function About() {
                 <div className="col-md-4">
                   <div className="feature-box">
                     <div className="feature-icon">
-                      <i className="bi bi-cross"></i>
+                      <i className="bi bi-house-heart"></i>
                     </div>
                     <h5>Christ-Centered Identity</h5>
                     <p>

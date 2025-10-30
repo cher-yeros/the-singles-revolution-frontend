@@ -27,7 +27,7 @@ export default function Stats() {
             >
               <div className="achievement-content">
                 <div className="achievement-icon">
-                  <i className="bi bi-cross"></i>
+                  <i className="bi bi-house-heart"></i>
                 </div>
                 <div className="achievement-details">
                   <div className="achievement-title">#JesusAtTheCenter</div>

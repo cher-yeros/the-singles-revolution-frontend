@@ -75,7 +75,7 @@ export default function Features() {
                 data-bs-target="#features-tab-4"
               >
                 <div className="tab-icon">
-                  <i className="bi bi-cross"></i>
+                  <i className="bi bi-house-heart"></i>
                 </div>
                 <div className="tab-content">
                   <h5>Unto the Lord</h5>

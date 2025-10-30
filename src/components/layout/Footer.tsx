@@ -24,7 +24,7 @@ export default function Footer() {
                   <i className="bi bi-heart"></i>
                 </a>
                 <a href="https://thesinglesrevolution.com/">
-                  <i className="bi bi-cross"></i>
+                  <i className="bi bi-house-heart"></i>
                 </a>
               </div>
             </div>

@@ -4,7 +4,7 @@ export default function Features2() {
   return (
     <section id="features-2" className="features-2 section">
       <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <div className="row g-4">
+        {/* <div className="row g-4">
           <div className="col-lg-4" data-aos="fade-up" data-aos-delay="150">
             <div className="feature-card">
               <div className="feature-icon">
@@ -110,38 +110,101 @@ export default function Features2() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div
-          className="feature-testimonial"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <div className="row align-items-center">
-            <div className="col-lg-6" data-aos="zoom-in">
-              <div className="testimonial-image">
+        <div className="row align-items-center justify-content-center">
+          <div
+            className="col-lg-8 mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div className="testimonial-content text-center">
+              <div className="testimonial-image text-center mb-3">
                 <img
-                  src="assets/img/features/features-4.webp"
-                  alt="Testimonial"
-                  className="img-fluid"
+                  src="/assets/img/placeholder.webp"
+                  alt="Chris Mobley"
+                  className="img-fluid rounded-circle"
+                  style={{
+                    maxWidth: "180px",
+                    margin: "0 auto",
+                    display: "block",
+                  }}
                 />
-              </div>
-            </div>
-            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <div className="testimonial-content">
-                <div className="quote-icon">
-                  <i className="bi bi-quote"></i>
-                </div>
-                <p>
-                  Curabitur arcu erat accumsan id imperdiet et porttitor at sem.
-                  Vivamus magna justo lacinia eget consectetur sed convallis at
-                  tellus. Curabitur aliquet quam id dui posuere blandit.
-                </p>
-                <div className="testimonial-author">
-                  <h4>Jennifer Austin</h4>
-                  <span>Product Director at TechCorp</span>
+                <div className="reviewer-name mt-2 mb-1">
+                  <h4 style={{ margin: 0 }}>Chris Mobley</h4>
+                  <span style={{ fontSize: "0.95rem", color: "#888" }}>
+                    Book Reviewer
+                  </span>
                 </div>
               </div>
+              <div className="quote-icon">
+                <i className="bi bi-quote"></i>
+              </div>
+              <p>
+                <strong>Overall Impression</strong>
+                <br />
+                First, let me say that the book is excellent. The core thesis is
+                very strong and established from the beginning. It’s not a book
+                about finding a partner, but about becoming a person prepared
+                for righteousness. The opening prayer, "Lord, prepare me, not
+                just for a relationship, but for righteousness," set the perfect
+                tone, and I felt my own heart praying along with yours many
+                times as I read. The book’s power is its focus on active
+                formation in Christ versus the passive waiting that so many
+                singles fall into.
+              </p>
+              <p>
+                <strong>Review of the Introduction</strong>
+                <br />
+                The Foreword immediately distinguishes the book from a typical
+                dating manual. The line, "use your season of singleness, not
+                just to wait well, but to become well," is a perfect summary. I
+                also think your shift of the core question from "When will I
+                meet the one?" to "Who is God forming me to become?" is a
+                central and important point for the whole book.
+              </p>
+              <p>
+                The section on discipleship, which frames singleness as a "holy
+                assignment," really resonated with me. It reminds me of
+                something a coworker once said: "When you're single, you date
+                the church; when you're married, you date your wife." Your
+                writing gives the theological weight to this idea. I will be
+                honest, I think many less mature readers will likely groan and
+                gloss over this section, but it is a truth they cannot afford to
+                miss. The work done in this season of "undivided devotion" is
+                precisely what will sustain them later.
+              </p>
+              <p>
+                Finally, the line that marriage often "reveals the places we've
+                refused to grow" rings with the clarity of a church bell for
+                anyone who's been through a difficult marriage season. It’s a
+                hard truth that perfectly prepares the reader for the deep soul
+                work ahead.
+              </p>
+              {/* <ul className="testimonial-highlights mt-3 mb-3 text-start d-inline-block">
+                <li>
+                  <i className="bi bi-check-circle-fill text-primary"></i>{" "}
+                  Active Formation over Passive Waiting
+                </li>
+                <li>
+                  <i className="bi bi-check-circle-fill text-primary"></i>{" "}
+                  Singleness as Holy Assignment
+                </li>
+                <li>
+                  <i className="bi bi-check-circle-fill text-primary"></i>{" "}
+                  Spiritual Depth and Challenge
+                </li>
+                <li>
+                  <i className="bi bi-check-circle-fill text-primary"></i>{" "}
+                  Sustaining Foundation
+                </li>
+              </ul>
+              <a
+                href="https://thesinglesrevolution.com/"
+                className="btn btn-primary btn-sm mt-2"
+              >
+                Get Your Free Copy
+              </a> */}
             </div>
           </div>
         </div>

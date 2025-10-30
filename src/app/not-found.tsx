@@ -81,11 +81,11 @@ export default function NotFound() {
                 data-aos="fade-up"
                 data-aos-delay="400"
               >
-                <Link href="/" className="btn-primary me-3">
+                <Link href="/" className="btn btn-primary me-3">
                   <i className="bi bi-house"></i>
                   <span>Return Home</span>
                 </Link>
-                <Link href="/mission" className="btn-secondary">
+                <Link href="/mission" className="btn btn-secondary">
                   <i className="bi bi-compass"></i>
                   <span>Find Your Mission</span>
                 </Link>

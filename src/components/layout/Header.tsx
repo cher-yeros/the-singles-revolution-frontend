@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useScroll } from "@/hooks/useScroll";
 import { useScrollspy } from "@/hooks/useScrollspy";
+import { usePathname } from "next/navigation";
 
 interface MenuItem {
   label: string;
@@ -20,12 +21,13 @@ export default function Header() {
   // Initialize scrollspy
   useScrollspy();
 
+  const pathname = usePathname();
+
   // Menu configuration
   const menuItems: MenuItem[] = [
     {
       label: "Home",
       href: "/",
-      isActive: true,
       type: "link",
     },
     {
@@ -43,15 +45,10 @@ export default function Header() {
       href: "/message",
       type: "link",
     },
-    // {
-    //   label: "Teachings",
-    //   href: "#features",
-    //   type: "anchor",
-    // },
     {
       label: "Reviews",
-      href: "#testimonials",
-      type: "anchor",
+      href: "/reviews",
+      type: "link",
     },
     // {
     //   label: "Resources",
@@ -84,41 +81,32 @@ export default function Header() {
 
   // Helper function to render menu items
   const renderMenuItem = (item: MenuItem) => {
-    if (item.type === "dropdown") {
-      return (
-        <li key={item.label} className="dropdown">
-          <Link href={item.href}>
-            <span>{item.label}</span>
-            <i className="bi bi-chevron-down toggle-dropdown"></i>
-          </Link>
-          <ul>
-            {item.children?.map((child: MenuItem) => (
-              <li key={child.label}>
-                <Link href={child.href} onClick={closeMobileNav}>
-                  {child.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </li>
-      );
-    }
-
+    // Dynamic isActive for type link
+    let isActive = false;
     if (item.type === "link") {
-      return (
-        <li key={item.label}>
-          <Link href={item.href} onClick={closeMobileNav}>
-            {item.label}
-          </Link>
-        </li>
-      );
+      // Home: exact match with "/" only
+      if (item.href === "/" && pathname === "/") isActive = true;
+      // Other links: check startsWith/href
+      else if (item.href !== "/" && pathname.startsWith(item.href))
+        isActive = true;
     }
-
-    return (
+    // For anchor/section links: isActive not shown here (handled by scrollspy? add if desired)
+    return item.type === "link" ? (
+      <li key={item.label}>
+        <Link
+          href={item.href}
+          onClick={closeMobileNav}
+          aria-current={isActive ? "page" : undefined}
+          className={isActive ? "active" : ""}
+        >
+          {item.label}
+        </Link>
+      </li>
+    ) : (
       <li key={item.label}>
         <a
           href={item.href}
-          className={item.isActive ? "active" : ""}
+          className="" // Always present, allows scrollspy to toggle 'active'
           onClick={closeMobileNav}
         >
           {item.label}

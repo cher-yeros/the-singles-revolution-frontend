@@ -65,8 +65,8 @@ export default function Testimonials() {
                 <i className="bi bi-quote"></i>
               </div>
               <p>
-                "WOW! I finished reading the book and it was sooo good! I
-                definitely want to read it again."
+                "WOW! I finished reading the book and It was sooo good! I
+                definitely want to read it again. Ruby."
               </p>
               <div className="client-info">
                 <div className="client-image">
