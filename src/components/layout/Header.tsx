@@ -32,8 +32,8 @@ export default function Header() {
     },
     {
       label: "About",
-      href: "#about",
-      type: "anchor",
+      href: "/about",
+      type: "link",
     },
     {
       label: "Mission",
@@ -90,6 +90,9 @@ export default function Header() {
       else if (item.href !== "/" && pathname.startsWith(item.href))
         isActive = true;
     }
+
+    console.log(isActive);
+
     // For anchor/section links: isActive not shown here (handled by scrollspy? add if desired)
     return item.type === "link" ? (
       <li key={item.label}>

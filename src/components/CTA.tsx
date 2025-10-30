@@ -24,7 +24,7 @@ export default function CTA() {
                 </p>
               </div>
               <img
-                src="assets/img/misc/misc-6.webp"
+                src="assets/img/about/sr4.jpg"
                 alt="Single and Ready Book"
                 className="img-fluid main-image"
               />

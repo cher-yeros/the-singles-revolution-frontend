@@ -199,7 +199,7 @@ export default function RootLayout({
         <AOSInitializer />
         <JavaScriptInitializer />
         <Header />
-        {children}
+        <main className="pt-5">{children}</main>
         <Footer />
 
         <Script

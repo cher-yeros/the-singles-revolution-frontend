@@ -152,7 +152,7 @@ export default function Features() {
                   <div className="visual-content">
                     <div className="main-image">
                       <img
-                        src="assets/img/features/features-4.webp"
+                        src="assets/img/about/sr1.jpg"
                         alt=""
                         className="img-fluid"
                       />
@@ -233,7 +233,7 @@ export default function Features() {
                   <div className="visual-content">
                     <div className="main-image">
                       <img
-                        src="assets/img/features/features-2.webp"
+                        src="assets/img/about/sr2.jpg"
                         alt=""
                         className="img-fluid"
                       />
@@ -309,7 +309,7 @@ export default function Features() {
                   <div className="visual-content">
                     <div className="main-image">
                       <img
-                        src="assets/img/features/features-6.webp"
+                        src="assets/img/about/sr3.jpg"
                         alt=""
                         className="img-fluid"
                       />
@@ -388,7 +388,7 @@ export default function Features() {
                   <div className="visual-content">
                     <div className="main-image">
                       <img
-                        src="assets/img/features/features-1.webp"
+                        src="assets/img/about/sr4.jpg"
                         alt=""
                         className="img-fluid"
                       />

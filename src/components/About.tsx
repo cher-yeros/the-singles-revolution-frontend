@@ -3,6 +3,10 @@ import React from "react";
 export default function About() {
   return (
     <section id="about" className="about section">
+      <div className="container section-title" data-aos="fade-up">
+        <span className="description-title">About Us</span>
+        <h2>The Singles Revolution</h2>
+      </div>
       <div className="container" data-aos="fade-up" data-aos-delay="100">
         <div className="row gy-5">
           <div className="col-lg-6" data-aos="fade-right" data-aos-delay="200">
@@ -53,7 +57,7 @@ export default function About() {
             <div className="visual-section">
               <div className="main-image-container">
                 <img
-                  src="assets/img/about/about-8.webp"
+                  src="assets/img/about/sr3.jpg"
                   alt="Professional team collaboration"
                   className="img-fluid main-visual"
                 />
@@ -76,14 +80,14 @@ export default function About() {
                 <div className="row g-3">
                   <div className="col-6">
                     <img
-                      src="assets/img/about/about-11.webp"
+                      src="assets/img/about/sr2.jpg"
                       alt="Team meeting"
                       className="img-fluid secondary-img"
                     />
                   </div>
                   <div className="col-6">
                     <img
-                      src="assets/img/about/about-5.webp"
+                      src="assets/img/about/sr4.jpg"
                       alt="Office workspace"
                       className="img-fluid secondary-img"
                     />
